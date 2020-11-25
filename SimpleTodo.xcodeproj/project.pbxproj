@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D23842C255338E5005A85B2 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23842B255338E5005A85B2 /* Checkbox.swift */; };
 		6D661E2425434F5F00638825 /* SimpleTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D661E2325434F5F00638825 /* SimpleTodoApp.swift */; };
 		6D661E2625434F5F00638825 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D661E2525434F5F00638825 /* ContentView.swift */; };
 		6D661E2825434F6100638825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D661E2725434F6100638825 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D23842B255338E5005A85B2 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		6D661E2025434F5F00638825 /* SimpleTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D661E2325434F5F00638825 /* SimpleTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTodoApp.swift; sourceTree = "<group>"; };
 		6D661E2525434F5F00638825 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D23843B25547320005A85B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6D661E512543508300638825 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		6D661E1725434F5F00638825 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		6D661E2225434F5F00638825 /* SimpleTodo */ = {
 			isa = PBXGroup;
 			children = (
+				6D23843B25547320005A85B2 /* Common */,
 				6D661E2325434F5F00638825 /* SimpleTodoApp.swift */,
 				6D661E2525434F5F00638825 /* ContentView.swift */,
 				6D661E2725434F6100638825 /* Assets.xcassets */,
@@ -128,6 +139,14 @@
 				6D661E4225434F6200638825 /* Info.plist */,
 			);
 			path = SimpleTodoUITests;
+			sourceTree = "<group>";
+		};
+		6D661E512543508300638825 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6D23842B255338E5005A85B2 /* Checkbox.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D661E2625434F5F00638825 /* ContentView.swift in Sources */,
+				6D23842C255338E5005A85B2 /* Checkbox.swift in Sources */,
 				6D661E2425434F5F00638825 /* SimpleTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
