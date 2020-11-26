@@ -7,10 +7,16 @@
 
 import SwiftUI
 
-struct Checkbox : View {
+struct Checkbox<Label: View> : View {
     
-    @State var checked: Bool
+    @Binding var checked: Bool
+    private var label: Label
     
+    init(isChecked: Binding<Bool>, @ViewBuilder label: () -> Label) {
+        self._checked = isChecked
+        self.label = label()
+    }
+
     var checkbox: some View {
         ZStack {
             Image(systemName: "square")
@@ -28,11 +34,14 @@ struct Checkbox : View {
     }
     
     var body: some View {
-        Button(action: {
-            checked.toggle()
-        }, label: {
-            checkbox
-        })
+        HStack {
+            Button(action: {
+                checked.toggle()
+            }, label: {
+                checkbox
+            })
+            label
+        }
     }
 }
 
@@ -40,8 +49,9 @@ struct Checkbox : View {
 struct Checkbox_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Checkbox(checked: true)
-            Checkbox(checked: false)
+            Checkbox(isChecked: .constant(true), label: { Text("Checked") })
+                .preferredColorScheme(.dark)
+            Checkbox(isChecked: .constant(false), label: { Text("Not checked") })
         }
     }
 }
