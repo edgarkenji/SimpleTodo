@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1C6F452548FEA4004A971A /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C6F442548FEA4004A971A /* TodoItem.swift */; };
+		6D1C6F4D2548FF04004A971A /* TodoItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C6F4C2548FF04004A971A /* TodoItemListView.swift */; };
 		6D23842C255338E5005A85B2 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D23842B255338E5005A85B2 /* Checkbox.swift */; };
 		6D661E2425434F5F00638825 /* SimpleTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D661E2325434F5F00638825 /* SimpleTodoApp.swift */; };
 		6D661E2625434F5F00638825 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D661E2525434F5F00638825 /* ContentView.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D1C6F442548FEA4004A971A /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		6D1C6F4C2548FF04004A971A /* TodoItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemListView.swift; sourceTree = "<group>"; };
 		6D23842B255338E5005A85B2 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		6D661E2025434F5F00638825 /* SimpleTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D661E2325434F5F00638825 /* SimpleTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTodoApp.swift; sourceTree = "<group>"; };
@@ -74,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D1C6F422548FE7C004A971A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6D851CE9254CAEDF006AC42C /* Summary */,
+				6D1C6F432548FE96004A971A /* Items */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6D1C6F432548FE96004A971A /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				6D1C6F442548FEA4004A971A /* TodoItem.swift */,
+				6D1C6F4C2548FF04004A971A /* TodoItemListView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		6D23843B25547320005A85B2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				6D23843B25547320005A85B2 /* Common */,
+				6D1C6F422548FE7C004A971A /* Features */,
 				6D661E2325434F5F00638825 /* SimpleTodoApp.swift */,
 				6D661E2525434F5F00638825 /* ContentView.swift */,
 				6D661E2725434F6100638825 /* Assets.xcassets */,
@@ -278,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1C6F452548FEA4004A971A /* TodoItem.swift in Sources */,
 				6D661E2625434F5F00638825 /* ContentView.swift in Sources */,
 				6D23842C255338E5005A85B2 /* Checkbox.swift in Sources */,
 				6D661E2425434F5F00638825 /* SimpleTodoApp.swift in Sources */,
