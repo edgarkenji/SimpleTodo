@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct TodoItem {
+struct TodoItem: Identifiable {
+    var id: UUID = UUID()
     var description: String
     var checked: Bool
 }

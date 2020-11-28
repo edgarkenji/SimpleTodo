@@ -13,10 +13,8 @@ struct TodoItemListView: View {
     
     var body: some View {
         List {
-            ForEach(items.indices) { (index) in
-                Checkbox(isChecked: self.$items[index].checked) {
-                    Text(self.items[index].description)
-                }
+            ForEach(items, id:\.id) { (item) in
+                CheckboxText(item: item)
             }
         }
     }

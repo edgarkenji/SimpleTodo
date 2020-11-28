@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SimpleTodoApp: App {
+    @ObservedObject var repository: TodoItemRepository = TodoItemRepository()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(repository)
         }
     }
 }
