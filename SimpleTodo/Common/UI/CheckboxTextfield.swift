@@ -1,5 +1,5 @@
 //
-//  CheckboxText.swift
+//  CheckboxTextfield.swift
 //  SimpleTodo
 //
 //  Created by Edgar Kenji Yamamoto on 26/11/20.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct CheckboxText : View {
+struct CheckboxTextfield : View {
     @State var item: TodoItem
     
     var body: some View {
         Checkbox(isChecked: $item.checked) {
-            Text(item.description)
+            TextField("Tap to edit your to-do item", text: $item.description)
         }
     }
 }
 
 struct CheckboxText_Preview: PreviewProvider {
     static var previews: some View {
-        CheckboxText(item: TodoItem(description: "Teste", checked: true))
+        CheckboxTextfield(item: TodoItem(description: "Teste", checked: true))
     }
 }
 

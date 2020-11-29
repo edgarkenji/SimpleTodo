@@ -14,7 +14,7 @@ struct TodoItemListView: View {
     var body: some View {
         List {
             ForEach(items, id:\.id) { (item) in
-                CheckboxText(item: item)
+                CheckboxTextfield(item: item)
             }
         }
     }

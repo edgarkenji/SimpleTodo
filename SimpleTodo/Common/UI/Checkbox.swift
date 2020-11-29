@@ -29,6 +29,10 @@ struct Checkbox<Label: View> : View {
                     .frame(width: 20, height: 20, alignment: .trailing)
                     .padding(EdgeInsets(top: 0, leading: 4, bottom: 4, trailing: 0))
                     .foregroundColor(Color.green)
+            } else {
+                Spacer()
+                    .frame(width: 20, height: 20, alignment: .trailing)
+                    .padding(EdgeInsets(top: 0, leading: 4, bottom: 4, trailing: 0))
             }
         }
     }
