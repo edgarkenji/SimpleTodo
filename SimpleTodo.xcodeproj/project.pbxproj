@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1843EF25751F3100838F78 /* TodoItemsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1843EE25751F3100838F78 /* TodoItemsEmptyView.swift */; };
 		6D1C6F452548FEA4004A971A /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C6F442548FEA4004A971A /* TodoItem.swift */; };
 		6D1C6F4D2548FF04004A971A /* TodoItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C6F4C2548FF04004A971A /* TodoItemListView.swift */; };
 		6D1C6F522549A38C004A971A /* TodoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C6F512549A38C004A971A /* TodoItemsView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D1843EE25751F3100838F78 /* TodoItemsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemsEmptyView.swift; sourceTree = "<group>"; };
 		6D1C6F442548FEA4004A971A /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		6D1C6F4C2548FF04004A971A /* TodoItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemListView.swift; sourceTree = "<group>"; };
 		6D1C6F512549A38C004A971A /* TodoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemsView.swift; sourceTree = "<group>"; };
@@ -89,7 +91,6 @@
 		6D1C6F422548FE7C004A971A /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				6D851CE9254CAEDF006AC42C /* Summary */,
 				6D1C6F432548FE96004A971A /* Items */,
 				6D2D7CB7254DA5F0005979C1 /* TodoItemRepository.swift */,
 			);
@@ -103,6 +104,7 @@
 				6D1C6F4C2548FF04004A971A /* TodoItemListView.swift */,
 				6D1C6F512549A38C004A971A /* TodoItemsView.swift */,
 				6D1C6F562549A693004A971A /* TodoItemsViewModel.swift */,
+				6D1843EE25751F3100838F78 /* TodoItemsEmptyView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -322,6 +324,7 @@
 				6D661E2425434F5F00638825 /* SimpleTodoApp.swift in Sources */,
 				6D2D7CB8254DA5F0005979C1 /* TodoItemRepository.swift in Sources */,
 				6D1C6F572549A693004A971A /* TodoItemsViewModel.swift in Sources */,
+				6D1843EF25751F3100838F78 /* TodoItemsEmptyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

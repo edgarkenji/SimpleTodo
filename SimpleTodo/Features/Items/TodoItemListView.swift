@@ -12,9 +12,16 @@ struct TodoItemListView: View {
     @Binding var items: [TodoItem]
     
     var body: some View {
-        List {
-            ForEach(items, id:\.id) { (item) in
-                CheckboxTextfield(item: item)
+        if items.isEmpty {
+            TodoItemsEmptyView()
+        } else {
+            List {
+                ForEach(items, id:\.id) { (item) in
+                    CheckboxTextfield(item: item)
+                }
+                .onDelete(perform: { indexSet in // add this to allow deleting an item by swiping left on the item
+                    items.remove(atOffsets: indexSet)
+                })
             }
         }
     }
