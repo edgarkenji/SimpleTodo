@@ -21,7 +21,7 @@ struct TodoItemsView: View {
                     .listStyle(InsetGroupedListStyle())
                 Button {
                     withAnimation {
-                        viewModel.add(items: "Testing")
+                        viewModel.add(items: "")
                     }
                 } label: {
                     HStack {

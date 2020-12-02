@@ -11,7 +11,18 @@ struct ContentView: View {
     @EnvironmentObject var repository: TodoItemRepository
     
     var body: some View {
-        TodoItemsView(viewModel: TodoItemsViewModel(repository: repository))
+        TabView {
+            TodoItemsView(viewModel: TodoItemsViewModel(repository: repository))
+                .tabItem {
+                    Image(systemName: "checkmark.square")
+                    Text("To-do")
+                }
+            SummaryView(list: $repository.items)
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Summary")
+                }
+        }
     }
 }
 

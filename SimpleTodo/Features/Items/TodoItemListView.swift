@@ -17,7 +17,13 @@ struct TodoItemListView: View {
         } else {
             List {
                 ForEach(items, id:\.id) { (item) in
-                    CheckboxTextfield(item: item)
+                    CheckboxTextfield(item: item) { (item) in
+                        let first = items.firstIndex { (lookup) -> Bool in
+                            lookup.id == item.id
+                        }
+                        guard let index = first else { return }
+                        items[index] = item
+                    }
                 }
                 .onDelete(perform: { indexSet in // add this to allow deleting an item by swiping left on the item
                     items.remove(atOffsets: indexSet)
