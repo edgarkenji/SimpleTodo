@@ -12,3 +12,6 @@ struct TodoItem: Identifiable {
     var description: String
     var checked: Bool
 }
+
+extension TodoItem: Codable {
+}
